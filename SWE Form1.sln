@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Software Engineeering Project", "Software Engineeering Project.csproj", "{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Debug|x64.ActiveCfg = Debug|x64
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Debug|x64.Build.0 = Debug|x64
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Release|x64.ActiveCfg = Release|x64
+		{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E951E03E-1759-40CE-8B05-9BDF62BB05AA}
+	EndGlobalSection
+EndGlobal
