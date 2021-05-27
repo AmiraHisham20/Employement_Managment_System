@@ -17,6 +17,7 @@ namespace SWE_Form1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new home_page());
+            Console.WriteLine("hekha1");
         }
     }
 }

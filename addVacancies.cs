@@ -61,7 +61,7 @@ namespace SWE_Form1
             {
                 MessageBox.Show("Choose job type");
             }
-            int number_vacancies=Convert.ToInt32(txt_vacanciesNo.Text);
+           // int number_vacancies=Convert.ToInt32(txt_vacanciesNo.Text);
 
             cmd.Parameters.Add("job_vacancies", txt_vacanciesNo.Text);
             

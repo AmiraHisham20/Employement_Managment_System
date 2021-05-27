@@ -29,6 +29,7 @@ namespace SWE_Form1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home_page));
             this.label1 = new System.Windows.Forms.Label();
             this.btn_company_reg = new System.Windows.Forms.Button();
             this.btn_jobSeeker_reg = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@ namespace SWE_Form1
             this.btn_addVac = new System.Windows.Forms.Button();
             this.labelCompany = new System.Windows.Forms.Label();
             this.labelSeeker = new System.Windows.Forms.Label();
+            this.btn_applicantShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +53,7 @@ namespace SWE_Form1
             // btn_company_reg
             // 
             this.btn_company_reg.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_company_reg.Location = new System.Drawing.Point(285, 162);
+            this.btn_company_reg.Location = new System.Drawing.Point(240, 162);
             this.btn_company_reg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_company_reg.Name = "btn_company_reg";
             this.btn_company_reg.Size = new System.Drawing.Size(190, 71);
@@ -63,7 +65,7 @@ namespace SWE_Form1
             // btn_jobSeeker_reg
             // 
             this.btn_jobSeeker_reg.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_jobSeeker_reg.Location = new System.Drawing.Point(285, 379);
+            this.btn_jobSeeker_reg.Location = new System.Drawing.Point(360, 375);
             this.btn_jobSeeker_reg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_jobSeeker_reg.Name = "btn_jobSeeker_reg";
             this.btn_jobSeeker_reg.Size = new System.Drawing.Size(190, 78);
@@ -75,7 +77,7 @@ namespace SWE_Form1
             // btn_findVac
             // 
             this.btn_findVac.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_findVac.Location = new System.Drawing.Point(702, 379);
+            this.btn_findVac.Location = new System.Drawing.Point(619, 375);
             this.btn_findVac.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_findVac.Name = "btn_findVac";
             this.btn_findVac.Size = new System.Drawing.Size(190, 78);
@@ -87,7 +89,7 @@ namespace SWE_Form1
             // btn_addVac
             // 
             this.btn_addVac.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addVac.Location = new System.Drawing.Point(702, 162);
+            this.btn_addVac.Location = new System.Drawing.Point(492, 162);
             this.btn_addVac.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_addVac.Name = "btn_addVac";
             this.btn_addVac.Size = new System.Drawing.Size(190, 71);
@@ -116,12 +118,25 @@ namespace SWE_Form1
             this.labelSeeker.TabIndex = 5;
             this.labelSeeker.Text = " Job Seeker: ";
             // 
+            // btn_applicantShow
+            // 
+            this.btn_applicantShow.Font = new System.Drawing.Font("Franklin Gothic Medium", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_applicantShow.Location = new System.Drawing.Point(741, 162);
+            this.btn_applicantShow.Name = "btn_applicantShow";
+            this.btn_applicantShow.Size = new System.Drawing.Size(198, 71);
+            this.btn_applicantShow.TabIndex = 6;
+            this.btn_applicantShow.Text = "Show Applicants";
+            this.btn_applicantShow.UseVisualStyleBackColor = true;
+            this.btn_applicantShow.Click += new System.EventHandler(this.btn_applicantShow_Click);
+            // 
             // home_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1066, 622);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(988, 580);
+            this.Controls.Add(this.btn_applicantShow);
             this.Controls.Add(this.labelSeeker);
             this.Controls.Add(this.labelCompany);
             this.Controls.Add(this.btn_addVac);
@@ -129,6 +144,7 @@ namespace SWE_Form1
             this.Controls.Add(this.btn_jobSeeker_reg);
             this.Controls.Add(this.btn_company_reg);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "home_page";
             this.Text = "Home Page";
@@ -148,6 +164,7 @@ namespace SWE_Form1
         private System.Windows.Forms.Button btn_addVac;
         private System.Windows.Forms.Label labelCompany;
         private System.Windows.Forms.Label labelSeeker;
+        private System.Windows.Forms.Button btn_applicantShow;
     }
 }
 
