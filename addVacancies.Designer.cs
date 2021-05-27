@@ -92,12 +92,18 @@ namespace SWE_Form1
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(443, 430);
+            this.btn_Add.FlatAppearance.BorderSize = 0;
+            this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add.Image = ((System.Drawing.Image)(resources.GetObject("btn_Add.Image")));
+            this.btn_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Add.Location = new System.Drawing.Point(371, 436);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(144, 43);
+            this.btn_Add.Size = new System.Drawing.Size(204, 43);
             this.btn_Add.TabIndex = 5;
             this.btn_Add.Text = "Add New";
+            this.btn_Add.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Add.UseVisualStyleBackColor = true;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -157,6 +163,7 @@ namespace SWE_Form1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(992, 589);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmb_companyName);
@@ -171,6 +178,7 @@ namespace SWE_Form1
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddVacancies";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Vacancies";
             this.Load += new System.EventHandler(this.AddVacancies_Load);
             this.ResumeLayout(false);

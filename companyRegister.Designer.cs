@@ -122,13 +122,20 @@ namespace SWE_Form1
             // 
             // btn_comp_reg
             // 
-            this.btn_comp_reg.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_comp_reg.BackColor = System.Drawing.Color.Transparent;
+            this.btn_comp_reg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_comp_reg.FlatAppearance.BorderSize = 0;
+            this.btn_comp_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_comp_reg.Font = new System.Drawing.Font("Cooper Black", 18F);
+            this.btn_comp_reg.Image = ((System.Drawing.Image)(resources.GetObject("btn_comp_reg.Image")));
+            this.btn_comp_reg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_comp_reg.Location = new System.Drawing.Point(396, 431);
             this.btn_comp_reg.Name = "btn_comp_reg";
-            this.btn_comp_reg.Size = new System.Drawing.Size(191, 46);
+            this.btn_comp_reg.Size = new System.Drawing.Size(188, 57);
             this.btn_comp_reg.TabIndex = 9;
             this.btn_comp_reg.Text = "Register";
-            this.btn_comp_reg.UseVisualStyleBackColor = true;
+            this.btn_comp_reg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_comp_reg.UseVisualStyleBackColor = false;
             this.btn_comp_reg.Click += new System.EventHandler(this.btn_comp_reg_Click);
             // 
             // companyRegister
@@ -137,6 +144,7 @@ namespace SWE_Form1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(992, 589);
             this.Controls.Add(this.btn_comp_reg);
             this.Controls.Add(this.label5);
@@ -149,7 +157,10 @@ namespace SWE_Form1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1010, 636);
+            this.MinimumSize = new System.Drawing.Size(1010, 636);
             this.Name = "companyRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Company\'s Data";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.companyRegister_FormClosing);
             this.Load += new System.EventHandler(this.companyRegister_Load);
