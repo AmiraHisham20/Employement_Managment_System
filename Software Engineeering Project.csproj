@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8787F8E0-E619-475F-A2D7-8B1D52BE37D5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>SWE_Form1</RootNamespace>
     <AssemblyName>SWE Form1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>

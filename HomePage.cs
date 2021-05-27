@@ -31,7 +31,6 @@ namespace SWE_Form1
         {
 
             this.Hide();
-
             companyRegister form = new companyRegister();
             form.ShowDialog();
 
@@ -40,8 +39,13 @@ namespace SWE_Form1
 
         private void btn_jobSeeker_reg_Click(object sender, EventArgs e)
         {
-            var myForm = new reg_seeker();
-            myForm.Show();
+            this.Hide();
+            reg_seeker form = new reg_seeker();
+            form.ShowDialog();
+
+            this.Close();
+            //var myForm = new reg_seeker();
+            //myForm.Show();
         }
 
         private void home_page_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,14 +55,24 @@ namespace SWE_Form1
 
         private void btn_addVac_Click(object sender, EventArgs e)
         {
-            var myForm = new AddVacancies();
-            myForm.Show();
+            this.Hide();
+            AddVacancies form = new AddVacancies();
+            form.ShowDialog();
+
+            this.Close();
+            //var myForm = new AddVacancies();
+            //myForm.Show();
         }
 
         private void btn_findVac_Click(object sender, EventArgs e)
         {
-            var myForm = new FindVacancies();
-            myForm.Show();
+            this.Hide();
+            FindVacancies form = new FindVacancies();
+            form.ShowDialog();
+
+            this.Close();
+            //var myForm = new FindVacancies();
+            //myForm.Show();
         }
     }
 }

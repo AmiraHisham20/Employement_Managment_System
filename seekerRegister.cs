@@ -15,14 +15,9 @@ namespace SWE_Form1
    
     public partial class reg_seeker : Form
     {
-        FindVacancies s = new FindVacancies();
-
         OracleConnection conn;
         string ordb = "Data Source=PESO;User Id=hr;Password=hr;";
 
-        string jobTitle;
-        string jobType;
-        string compName;
         public reg_seeker()
         {
             InitializeComponent();
@@ -36,14 +31,11 @@ namespace SWE_Form1
 
         private void btn_seeker_reg_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(compName);
-            Console.WriteLine(jobTitle);
-            Console.WriteLine(jobType);
 
             int age = Convert.ToInt32(txt_age.Text);
             if (age <= 18)
             {
-                MessageBox.Show("Sorry you must be above or equal 18 years old ");
+                MessageBox.Show("Sorry you must be above or equal 18 years old!!");
             }
             else
             {
@@ -53,11 +45,8 @@ namespace SWE_Form1
                 cmd.CommandText = "insert_seek";
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                int SSN = Convert.ToInt32(txt_ssn.Text);
-                int GYear = Convert.ToInt32(txt_gradeYear.Text);
 
-                cmd.Parameters.Add("seeker_ssn", SSN);
-
+                cmd.Parameters.Add("seeker_ssn", Convert.ToInt32(txt_ssn.Text));
                 cmd.Parameters.Add("seeker_name", txt_name.Text);
                 cmd.Parameters.Add("seeker_number", txt_number.Text);
                 cmd.Parameters.Add("seeker_mail", txt_mail.Text);
@@ -72,6 +61,15 @@ namespace SWE_Form1
 
                 MessageBox.Show("seeker successfully added");
             }
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            home_page form = new home_page();
+            form.ShowDialog();
+
+            this.Close();
         }
     }
 }

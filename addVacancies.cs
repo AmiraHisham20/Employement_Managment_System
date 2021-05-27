@@ -75,5 +75,14 @@ namespace SWE_Form1
 
             MessageBox.Show("Vacancy successfully added");
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            home_page form = new home_page();
+            form.ShowDialog();
+
+            this.Close();
+        }
     }
 }

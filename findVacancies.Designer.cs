@@ -39,6 +39,7 @@ namespace SWE_Form1
             this.btn_applay = new System.Windows.Forms.Button();
             this.txt_SSN = new System.Windows.Forms.TextBox();
             this.cmb_compName = new System.Windows.Forms.ComboBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmb_Jtitle
@@ -121,12 +122,23 @@ namespace SWE_Form1
             this.cmb_compName.Size = new System.Drawing.Size(259, 28);
             this.cmb_compName.TabIndex = 10;
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(74, 26);
+            this.btn_back.TabIndex = 21;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // FindVacancies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(988, 580);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.cmb_compName);
             this.Controls.Add(this.txt_SSN);
             this.Controls.Add(this.btn_applay);
@@ -156,5 +168,6 @@ namespace SWE_Form1
         private System.Windows.Forms.Button btn_applay;
         private System.Windows.Forms.TextBox txt_SSN;
         private System.Windows.Forms.ComboBox cmb_compName;
+        private System.Windows.Forms.Button btn_back;
     }
 }
