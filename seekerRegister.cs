@@ -40,30 +40,38 @@ namespace SWE_Form1
             Console.WriteLine(jobTitle);
             Console.WriteLine(jobType);
 
-            OracleCommand cmd = new OracleCommand();
-            cmd.Connection = conn;
+            int age = Convert.ToInt32(txt_age.Text);
+            if (age <= 18)
+            {
+                MessageBox.Show("Sorry you must be above or equal 18 years old ");
+            }
+            else
+            {
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
 
-            cmd.CommandText = "insert_seek";
-            cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "insert_seek";
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            int SSN = Convert.ToInt32(txt_ssn.Text);
-            int GYear = Convert.ToInt32(txt_gradeYear.Text);
-            
-            cmd.Parameters.Add("seeker_ssn", SSN);
+                int SSN = Convert.ToInt32(txt_ssn.Text);
+                int GYear = Convert.ToInt32(txt_gradeYear.Text);
 
-            cmd.Parameters.Add("seeker_name", txt_name.Text);
-            cmd.Parameters.Add("seeker_number", txt_number.Text);
-            cmd.Parameters.Add("seeker_mail", txt_mail.Text);
-            cmd.Parameters.Add("seeker_address", txt_adress.Text);
-            cmd.Parameters.Add("seeker_field", txt_field_of_study.Text);
+                cmd.Parameters.Add("seeker_ssn", SSN);
 
-            cmd.Parameters.Add("seeker_gradeYear", Convert.ToInt32(txt_gradeYear.Text));
-            cmd.Parameters.Add("seeker_gradeState", Convert.ToChar(txt_grade_state.Text));
-            cmd.Parameters.Add("seeker_expYear", Convert.ToInt32(txt_exp_years.Text));
-            
-            cmd.ExecuteNonQuery();
+                cmd.Parameters.Add("seeker_name", txt_name.Text);
+                cmd.Parameters.Add("seeker_number", txt_number.Text);
+                cmd.Parameters.Add("seeker_mail", txt_mail.Text);
+                cmd.Parameters.Add("seeker_address", txt_adress.Text);
+                cmd.Parameters.Add("seeker_field", txt_field_of_study.Text);
 
-            MessageBox.Show("seeker successfully added");
+                cmd.Parameters.Add("seeker_gradeYear", Convert.ToInt32(txt_gradeYear.Text));
+                cmd.Parameters.Add("seeker_gradeState", Convert.ToChar(txt_grade_state.Text));
+                cmd.Parameters.Add("seeker_expYear", Convert.ToInt32(txt_exp_years.Text));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("seeker successfully added");
+            }
         }
     }
 }
