@@ -53,7 +53,7 @@ namespace SWE_Form1
         {
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = @"select* from jobvacancies where job_name=:n and job_type=:T";
+            cmd.CommandText = @"select* from jobvacancies where job_name=:n and job_type=:T and NUMBER_VACANCIES>0";
             cmd.Parameters.Add("n", cmb_Jtitle.SelectedItem.ToString());
             cmd.Parameters.Add("T", cmb_JType.SelectedItem.ToString());
             OracleDataReader dr = cmd.ExecuteReader();
@@ -91,6 +91,8 @@ namespace SWE_Form1
             cmd.Parameters.Add("JobTitle", job_title);
             cmd.Parameters.Add("JobType", job_type);
             cmd.ExecuteNonQuery();
+            
+            MessageBox.Show("Application done");
             //var myForm = new reg_seeker(comp_name,job_title,job_type);
             //myForm.Show();
             //Console.WriteLine(comp_name);
