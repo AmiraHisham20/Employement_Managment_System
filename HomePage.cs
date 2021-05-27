@@ -25,20 +25,17 @@ namespace SWE_Form1
         {
             conn = new OracleConnection(ordb);
             conn.Open();
-            Console.WriteLine("hekha2");
         }
 
         private void btn_company_reg_Click(object sender, EventArgs e)
         {
 
             this.Hide();
+
             companyRegister form = new companyRegister();
             form.ShowDialog();
-            this.Close();
-            //var myForm = new companyRegister();
-            //myForm.Show();
-          
 
+            this.Close();
         }
 
         private void btn_jobSeeker_reg_Click(object sender, EventArgs e)
@@ -62,11 +59,6 @@ namespace SWE_Form1
         {
             var myForm = new FindVacancies();
             myForm.Show();
-        }
-
-        private void btn_applicantShow_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

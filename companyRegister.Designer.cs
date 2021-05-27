@@ -129,11 +129,11 @@ namespace SWE_Form1
             this.btn_comp_reg.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.btn_comp_reg.Image = ((System.Drawing.Image)(resources.GetObject("btn_comp_reg.Image")));
             this.btn_comp_reg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_comp_reg.Location = new System.Drawing.Point(396, 431);
+            this.btn_comp_reg.Location = new System.Drawing.Point(403, 429);
             this.btn_comp_reg.Name = "btn_comp_reg";
-            this.btn_comp_reg.Size = new System.Drawing.Size(188, 57);
+            this.btn_comp_reg.Size = new System.Drawing.Size(198, 57);
             this.btn_comp_reg.TabIndex = 9;
-            this.btn_comp_reg.Text = "Register";
+            this.btn_comp_reg.Text = "Register   ";
             this.btn_comp_reg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_comp_reg.UseVisualStyleBackColor = false;
             this.btn_comp_reg.Click += new System.EventHandler(this.btn_comp_reg_Click);

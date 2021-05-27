@@ -124,7 +124,6 @@ namespace SWE_Form1
             this.btn_applicantShow.TabIndex = 6;
             this.btn_applicantShow.Text = "Show Applicants";
             this.btn_applicantShow.UseVisualStyleBackColor = true;
-            this.btn_applicantShow.Click += new System.EventHandler(this.btn_applicantShow_Click);
             // 
             // home_page
             // 
