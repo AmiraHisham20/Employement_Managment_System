@@ -81,5 +81,14 @@ namespace SWE_Form1
             form.ShowDialog();
             this.Close();
         }
+
+        private void btn_manage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manageVacancies form = new manageVacancies();
+            form.ShowDialog();
+            this.Close();
+            
+        }
     }
 }

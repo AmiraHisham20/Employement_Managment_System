@@ -73,6 +73,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="manageVacancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>manageVacancies.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="showApplicant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="manageVacancies.resx">
+      <DependentUpon>manageVacancies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="showApplicant.resx">
       <DependentUpon>showApplicant.cs</DependentUpon>
     </EmbeddedResource>

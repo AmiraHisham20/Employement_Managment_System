@@ -47,7 +47,7 @@ namespace SWE_Form1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(351, 54);
+            this.label1.Location = new System.Drawing.Point(301, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(431, 53);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace SWE_Form1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(282, 195);
+            this.label2.Location = new System.Drawing.Point(232, 195);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 32);
             this.label2.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace SWE_Form1
             // 
             // txt_compID
             // 
-            this.txt_compID.Location = new System.Drawing.Point(548, 204);
+            this.txt_compID.Location = new System.Drawing.Point(498, 204);
             this.txt_compID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_compID.Name = "txt_compID";
             this.txt_compID.Size = new System.Drawing.Size(271, 26);
@@ -73,7 +73,7 @@ namespace SWE_Form1
             // 
             // txt_compname
             // 
-            this.txt_compname.Location = new System.Drawing.Point(548, 278);
+            this.txt_compname.Location = new System.Drawing.Point(498, 278);
             this.txt_compname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_compname.Name = "txt_compname";
             this.txt_compname.Size = new System.Drawing.Size(271, 26);
@@ -83,7 +83,7 @@ namespace SWE_Form1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(282, 269);
+            this.label3.Location = new System.Drawing.Point(232, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 32);
             this.label3.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace SWE_Form1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(282, 331);
+            this.label4.Location = new System.Drawing.Point(232, 331);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 5;
@@ -101,7 +101,7 @@ namespace SWE_Form1
             // 
             // txt_compmail
             // 
-            this.txt_compmail.Location = new System.Drawing.Point(548, 340);
+            this.txt_compmail.Location = new System.Drawing.Point(498, 340);
             this.txt_compmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_compmail.Name = "txt_compmail";
             this.txt_compmail.Size = new System.Drawing.Size(271, 26);
@@ -109,7 +109,7 @@ namespace SWE_Form1
             // 
             // txt_comp_number
             // 
-            this.txt_comp_number.Location = new System.Drawing.Point(548, 409);
+            this.txt_comp_number.Location = new System.Drawing.Point(498, 409);
             this.txt_comp_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_comp_number.Name = "txt_comp_number";
             this.txt_comp_number.Size = new System.Drawing.Size(271, 26);
@@ -119,7 +119,7 @@ namespace SWE_Form1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(282, 400);
+            this.label5.Location = new System.Drawing.Point(232, 400);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(234, 32);
             this.label5.TabIndex = 8;
@@ -134,7 +134,7 @@ namespace SWE_Form1
             this.btn_comp_reg.Font = new System.Drawing.Font("Cooper Black", 18F);
             this.btn_comp_reg.Image = ((System.Drawing.Image)(resources.GetObject("btn_comp_reg.Image")));
             this.btn_comp_reg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_comp_reg.Location = new System.Drawing.Point(453, 536);
+            this.btn_comp_reg.Location = new System.Drawing.Point(400, 480);
             this.btn_comp_reg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_comp_reg.Name = "btn_comp_reg";
             this.btn_comp_reg.Size = new System.Drawing.Size(223, 71);
@@ -161,7 +161,7 @@ namespace SWE_Form1
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1112, 725);
+            this.ClientSize = new System.Drawing.Size(988, 580);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_comp_reg);
             this.Controls.Add(this.label5);
@@ -175,8 +175,9 @@ namespace SWE_Form1
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximumSize = new System.Drawing.Size(1134, 781);
-            this.MinimumSize = new System.Drawing.Size(1134, 781);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1010, 636);
+            this.MinimumSize = new System.Drawing.Size(1010, 636);
             this.Name = "companyRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Company\'s Data";

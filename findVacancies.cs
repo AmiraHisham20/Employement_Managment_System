@@ -59,19 +59,20 @@ namespace SWE_Form1
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
 
-            cmd.CommandText = @"select* from jobvacancies where job_name=:n and job_type=:T and NUMBER_VACANCIES>0";
-            cmd.Parameters.Add("n", cmb_Jtitle.SelectedItem.ToString());
-            cmd.Parameters.Add("T", cmb_JType.SelectedItem.ToString());
+            cmd.CommandText = "Find_Vacancy";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("job_name", cmb_Jtitle.SelectedItem.ToString());
+            cmd.Parameters.Add("job_type", cmb_JType.SelectedItem.ToString());
+            cmd.Parameters.Add("cname", OracleDbType.RefCursor, ParameterDirection.Output);
 
             OracleDataReader dr = cmd.ExecuteReader();
 
             dr = cmd.ExecuteReader();
 
            while(dr.Read())
-
-            {
+           {
                 cmb_compName.Items.Add(dr[0]);
-            }
+           }
 
             string job_title = cmb_Jtitle.SelectedItem.ToString();
             string job_type = cmb_JType.SelectedItem.ToString();
