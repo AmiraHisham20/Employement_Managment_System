@@ -33,13 +33,15 @@ namespace SWE_Form1
             OracleCommand cmd = new OracleCommand();
 
             cmd.Connection = conn;
-            cmd.CommandText = "insert_company";
-            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = @"insert  into  COMPANY
+                              (comp_id, comp_name,comp_mail, comp_phone)
+                              Values(:compid, :compname, :compmail,:compphone)";
+           // cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.Add("comp_id", txt_compID.Text);
-            cmd.Parameters.Add("comp_name", txt_compname.Text);
-            cmd.Parameters.Add("comp_mail", txt_compmail.Text);
-            cmd.Parameters.Add("comp_phone", txt_comp_number.Text);
+            cmd.Parameters.Add("compid", txt_compID.Text);
+            cmd.Parameters.Add("compname", txt_compname.Text);
+            cmd.Parameters.Add("compmail", txt_compmail.Text);
+            cmd.Parameters.Add("compphone",txt_comp_number.Text);
 
             cmd.ExecuteNonQuery();
 
