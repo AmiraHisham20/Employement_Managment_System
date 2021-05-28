@@ -33,7 +33,6 @@ namespace SWE_Form1
             this.Hide();
             companyRegister form = new companyRegister();
             form.ShowDialog();
-
             this.Close();
         }
 
@@ -77,6 +76,10 @@ namespace SWE_Form1
 
         private void btn_applicantShow_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            showApplicant form = new showApplicant();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }
