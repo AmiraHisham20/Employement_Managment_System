@@ -73,12 +73,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShowApplicants.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ShowApplicants.Designer.cs">
-      <DependentUpon>ShowApplicants.cs</DependentUpon>
-    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +105,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ShowApplicants.resx">
-      <DependentUpon>ShowApplicants.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>

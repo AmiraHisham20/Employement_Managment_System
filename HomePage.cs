@@ -77,9 +77,6 @@ namespace SWE_Form1
 
         private void btn_applicantShow_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ShowApplicants form = new ShowApplicants();
-            form.ShowDialog();
         }
     }
 }
