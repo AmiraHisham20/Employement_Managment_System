@@ -71,5 +71,10 @@ namespace SWE_Form1
 
             this.Close();
         }
+
+        private void reg_seeker_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Dispose();
+        }
     }
 }

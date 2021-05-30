@@ -34,8 +34,8 @@ namespace SWE_Form1
             this.label1 = new System.Windows.Forms.Label();
             this.txt_compId = new System.Windows.Forms.TextBox();
             this.btn_back = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_showVacancies = new System.Windows.Forms.Button();
+            this.btn_modify = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacancies)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,25 +77,25 @@ namespace SWE_Form1
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // button1
+            // btn_showVacancies
             // 
-            this.button1.Location = new System.Drawing.Point(391, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 50);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Show vacancies";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_showVacancies.Location = new System.Drawing.Point(391, 135);
+            this.btn_showVacancies.Name = "btn_showVacancies";
+            this.btn_showVacancies.Size = new System.Drawing.Size(139, 50);
+            this.btn_showVacancies.TabIndex = 24;
+            this.btn_showVacancies.Text = "Show vacancies";
+            this.btn_showVacancies.UseVisualStyleBackColor = true;
+            this.btn_showVacancies.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_modify
             // 
-            this.button2.Location = new System.Drawing.Point(378, 503);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 49);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Modify";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_modify.Location = new System.Drawing.Point(378, 503);
+            this.btn_modify.Name = "btn_modify";
+            this.btn_modify.Size = new System.Drawing.Size(167, 49);
+            this.btn_modify.TabIndex = 25;
+            this.btn_modify.Text = "Modify";
+            this.btn_modify.UseVisualStyleBackColor = true;
+            this.btn_modify.Click += new System.EventHandler(this.button2_Click);
             // 
             // manageVacancies
             // 
@@ -105,8 +105,8 @@ namespace SWE_Form1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(988, 580);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_modify);
+            this.Controls.Add(this.btn_showVacancies);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_compId);
@@ -115,6 +115,7 @@ namespace SWE_Form1
             this.MaximumSize = new System.Drawing.Size(1010, 636);
             this.Name = "manageVacancies";
             this.Text = "Manage Vacancies";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.manageVacancies_FormClosing);
             this.Load += new System.EventHandler(this.manageVacancies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacancies)).EndInit();
             this.ResumeLayout(false);
@@ -128,7 +129,7 @@ namespace SWE_Form1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_compId;
         private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_showVacancies;
+        private System.Windows.Forms.Button btn_modify;
     }
 }

@@ -56,6 +56,8 @@ namespace SWE_Form1
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+            cmb_compName.Items.Clear();
+
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
 
@@ -89,16 +91,22 @@ namespace SWE_Form1
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
 
-            cmd.CommandText = "Insert_jobInfo";
+            cmd.CommandText = "Insert_jobInf";
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.Add("seeke_ssn", txt_SSN.Text);
             cmd.Parameters.Add("comp_name", comp_name);
             cmd.Parameters.Add("JobTitle", job_title);
             cmd.Parameters.Add("JobType", job_type);
+            cmd.Parameters.Add("n", OracleDbType.Int32, ParameterDirection.Output);
 
             cmd.ExecuteNonQuery();
-            
+            string x = (cmd.Parameters["n"].Value).ToString();
+            if(x=="0")
+            {
+                MessageBox.Show("Sorry this ID doesn't exist");
+            }
+            else
             MessageBox.Show("Application done");
         }
 
@@ -109,6 +117,11 @@ namespace SWE_Form1
             form.ShowDialog();
 
             this.Close();
+        }
+
+        private void FindVacancies_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Dispose();
         }
     }
 }

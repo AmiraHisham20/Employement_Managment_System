@@ -41,7 +41,7 @@ namespace SWE_Form1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string cmdstr = @"select comp_name ,job_name,job_type, number_vacancies from jobvacancies v where comp_name='XO Brogrammers'";
+            string cmdstr = @"select comp_name ,job_name,job_type, number_vacancies from jobvacancies v where comp_name=:n";
             adaptor = new OracleDataAdapter(cmdstr, ordb);
             adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);
             ds = new DataSet();
@@ -56,5 +56,7 @@ namespace SWE_Form1
             MessageBox.Show("Modification is successfully done");
 
         }
+
+    
     }
 }

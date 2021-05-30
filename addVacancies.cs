@@ -84,5 +84,10 @@ namespace SWE_Form1
 
             this.Close();
         }
+
+        private void AddVacancies_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Dispose();
+        }
     }
 }

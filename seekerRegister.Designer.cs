@@ -301,6 +301,7 @@ namespace SWE_Form1
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "reg_seeker";
             this.Text = "Seeker\'s Data";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reg_seeker_FormClosing);
             this.Load += new System.EventHandler(this.reg_seeker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

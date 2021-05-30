@@ -151,6 +151,7 @@ namespace SWE_Form1
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FindVacancies";
             this.Text = "Find Vacancies";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FindVacancies_FormClosing);
             this.Load += new System.EventHandler(this.FindVacancies_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
