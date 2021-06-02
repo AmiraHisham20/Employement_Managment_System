@@ -90,5 +90,20 @@ namespace SWE_Form1
             this.Close();
             
         }
+
+        private void btn_Credits_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sema Ghith\n"+"Amira Hesham\n" +"Mai Mansour\n" +"Omar Mohamed\n" +"Abdelrahman Tamer\n" +"Abdelwahab Mohamed\n");
+        }
+
+        private void btn_HowWorks_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" At first time weither you are a company or a job seeker \nyou must register by your info\nthen you choose the functionalites you want\ndepending on the type of your register\nall changes you make inside the system will be saved.\n***WARNING: Don't try to change what not for you or\nfake any of your info that will affect the \nefficiency of your recevied service***.");
+        }
+
+        private void btn_whatPeso_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" A software system that allows\n companies to register in it, set job\n vacancies in every available position and\n set the number of employees that they want\n in a particular position, also allow employees\n to register and search for jobs with the same job\n title that they want to apply in it,\n If he applied in any company this company will be\n able to see this applicant information.");
+        }
     }
 }
