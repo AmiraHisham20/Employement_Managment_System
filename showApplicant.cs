@@ -29,18 +29,41 @@ namespace SWE_Form1
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            string cmdstr = @"select job_name,Seeker_ssn,SEEKER_NAME,SEEKER_NUMBER, SEEKER_MAIL, SEEKER_ADDRESS, 
+            OracleConnection conn = new OracleConnection(ordb);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.CommandText = "Validatee";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("CID", txt_compId.Text);
+            cmd.Parameters.Add("n", OracleDbType.Int32, ParameterDirection.Output);
+
+            cmd.ExecuteNonQuery();
+
+
+            string x = (cmd.Parameters["n"].Value).ToString();
+
+            if (x == "0")
+            {
+                MessageBox.Show("Sorry this ID doesn't exist");
+            }
+            else
+            {
+                string cmdstr = @"select job_name,Seeker_ssn,SEEKER_NAME,SEEKER_NUMBER, SEEKER_MAIL, SEEKER_ADDRESS, 
                             FIELD_STUDY,GRAD_YEAR,GRAD_STAT,YEARS_EXPERIENCE from company c, jobseeker j where c.comp_id=:n and j.comp_name=c.comp_name";
-            adaptor = new OracleDataAdapter(cmdstr, ordb);
-            adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);
-            ds = new DataSet();
-            adaptor.Fill(ds);
-            dgv_showApplicant.DataSource = ds.Tables[0];
+                adaptor = new OracleDataAdapter(cmdstr, ordb);
+                adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);
+                ds = new DataSet();
+                adaptor.Fill(ds);
+                dgv_showApplicant.DataSource = ds.Tables[0];
+            }
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-             this.Hide();
+            this.Hide();
             home_page form = new home_page();
             form.ShowDialog();
 
