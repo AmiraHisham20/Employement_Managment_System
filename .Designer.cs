@@ -42,29 +42,30 @@ namespace SWE_Form1
             // dgv_vacancies
             // 
             this.dgv_vacancies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_vacancies.Location = new System.Drawing.Point(234, 209);
+            this.dgv_vacancies.Location = new System.Drawing.Point(263, 261);
             this.dgv_vacancies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_vacancies.Name = "dgv_vacancies";
             this.dgv_vacancies.RowHeadersWidth = 62;
             this.dgv_vacancies.RowTemplate.Height = 28;
-            this.dgv_vacancies.Size = new System.Drawing.Size(522, 212);
+            this.dgv_vacancies.Size = new System.Drawing.Size(587, 265);
             this.dgv_vacancies.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(249, 78);
+            this.label1.Location = new System.Drawing.Point(280, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 36);
+            this.label1.Size = new System.Drawing.Size(246, 43);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Company Name :";
+            this.label1.Text = "Company ID :";
             // 
             // txt_compId
             // 
-            this.txt_compId.Location = new System.Drawing.Point(545, 90);
+            this.txt_compId.Location = new System.Drawing.Point(553, 113);
+            this.txt_compId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_compId.Name = "txt_compId";
-            this.txt_compId.Size = new System.Drawing.Size(183, 22);
+            this.txt_compId.Size = new System.Drawing.Size(205, 26);
             this.txt_compId.TabIndex = 4;
             // 
             // btn_back
@@ -74,10 +75,10 @@ namespace SWE_Form1
             this.btn_back.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_back.Image = ((System.Drawing.Image)(resources.GetObject("btn_back.Image")));
             this.btn_back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_back.Location = new System.Drawing.Point(11, 10);
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
             this.btn_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(124, 54);
+            this.btn_back.Size = new System.Drawing.Size(140, 68);
             this.btn_back.TabIndex = 23;
             this.btn_back.Text = "Back";
             this.btn_back.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -91,10 +92,10 @@ namespace SWE_Form1
             this.btn_showVacancies.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_showVacancies.Image = ((System.Drawing.Image)(resources.GetObject("btn_showVacancies.Image")));
             this.btn_showVacancies.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_showVacancies.Location = new System.Drawing.Point(429, 148);
+            this.btn_showVacancies.Location = new System.Drawing.Point(483, 185);
             this.btn_showVacancies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_showVacancies.Name = "btn_showVacancies";
-            this.btn_showVacancies.Size = new System.Drawing.Size(136, 40);
+            this.btn_showVacancies.Size = new System.Drawing.Size(153, 50);
             this.btn_showVacancies.TabIndex = 24;
             this.btn_showVacancies.Text = "Show vacancies";
             this.btn_showVacancies.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,10 +109,10 @@ namespace SWE_Form1
             this.btn_modify.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_modify.Image = ((System.Drawing.Image)(resources.GetObject("btn_modify.Image")));
             this.btn_modify.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_modify.Location = new System.Drawing.Point(417, 439);
+            this.btn_modify.Location = new System.Drawing.Point(469, 549);
             this.btn_modify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_modify.Name = "btn_modify";
-            this.btn_modify.Size = new System.Drawing.Size(157, 39);
+            this.btn_modify.Size = new System.Drawing.Size(177, 49);
             this.btn_modify.TabIndex = 25;
             this.btn_modify.Text = "Modify";
             this.btn_modify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,12 +121,12 @@ namespace SWE_Form1
             // 
             // manageVacancies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 589);
+            this.ClientSize = new System.Drawing.Size(1112, 725);
             this.Controls.Add(this.btn_modify);
             this.Controls.Add(this.btn_showVacancies);
             this.Controls.Add(this.btn_back);
@@ -134,8 +135,8 @@ namespace SWE_Form1
             this.Controls.Add(this.dgv_vacancies);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1010, 636);
-            this.MinimumSize = new System.Drawing.Size(1010, 636);
+            this.MaximumSize = new System.Drawing.Size(1134, 781);
+            this.MinimumSize = new System.Drawing.Size(1134, 781);
             this.Name = "manageVacancies";
             this.Text = "Manage Vacancies";
             this.Load += new System.EventHandler(this.manageVacancies_Load);

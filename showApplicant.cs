@@ -29,7 +29,7 @@ namespace SWE_Form1
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            string cmdstr = @"select Seeker_ssn, SEEKER_NAME,SEEKER_NUMBER, SEEKER_MAIL, SEEKER_ADDRESS, 
+            string cmdstr = @"select job_name,Seeker_ssn,SEEKER_NAME,SEEKER_NUMBER, SEEKER_MAIL, SEEKER_ADDRESS, 
                             FIELD_STUDY,GRAD_YEAR,GRAD_STAT,YEARS_EXPERIENCE from company c, jobseeker j where c.comp_id=:n and j.comp_name=c.comp_name";
             adaptor = new OracleDataAdapter(cmdstr, ordb);
             adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);

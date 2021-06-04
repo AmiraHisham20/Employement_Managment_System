@@ -41,12 +41,39 @@ namespace SWE_Form1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string cmdstr = @"select comp_name ,job_name,job_type, number_vacancies from jobvacancies v where comp_name=:n";
-            adaptor = new OracleDataAdapter(cmdstr, ordb);
-            adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);
-            ds = new DataSet();
-            adaptor.Fill(ds);
-            dgv_vacancies.DataSource = ds.Tables[0];
+            OracleConnection conn = new OracleConnection(ordb);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.CommandText = "Validatee";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("CID", txt_compId.Text);
+            cmd.Parameters.Add("n", OracleDbType.Int32, ParameterDirection.Output);
+
+            cmd.ExecuteNonQuery();
+
+
+            string x = (cmd.Parameters["n"].Value).ToString();
+            
+            if (x == "0")
+            {
+                MessageBox.Show("Sorry this ID doesn't exist");
+            }
+            else
+            {
+                string cmdstr = @"select comp_name ,job_name,job_type, number_vacancies 
+                              from jobvacancies
+                              where comp_name=
+                              (select comp_name from company where comp_id= :n)";
+                adaptor = new OracleDataAdapter(cmdstr, ordb);
+                adaptor.SelectCommand.Parameters.Add("n", txt_compId.Text);
+                ds = new DataSet();
+                adaptor.Fill(ds);
+                dgv_vacancies.DataSource = ds.Tables[0];
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +84,6 @@ namespace SWE_Form1
 
         }
 
-    
+
     }
 }
