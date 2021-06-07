@@ -123,5 +123,15 @@ namespace SWE_Form1
         {
             conn.Dispose();
         }
+
+        private void btn_modify_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Report2 form = new Report2();
+
+            form.ShowDialog();
+
+            this.Close();
+        }
     }
 }

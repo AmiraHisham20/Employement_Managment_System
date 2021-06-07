@@ -42,31 +42,35 @@ namespace SWE_Form1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btn_modify = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmb_Jtitle
             // 
             this.cmb_Jtitle.FormattingEnabled = true;
-            this.cmb_Jtitle.Location = new System.Drawing.Point(465, 130);
+            this.cmb_Jtitle.Location = new System.Drawing.Point(349, 106);
+            this.cmb_Jtitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_Jtitle.Name = "cmb_Jtitle";
-            this.cmb_Jtitle.Size = new System.Drawing.Size(230, 24);
+            this.cmb_Jtitle.Size = new System.Drawing.Size(174, 21);
             this.cmb_Jtitle.TabIndex = 0;
             // 
             // cmb_JType
             // 
             this.cmb_JType.FormattingEnabled = true;
-            this.cmb_JType.Location = new System.Drawing.Point(465, 201);
+            this.cmb_JType.Location = new System.Drawing.Point(349, 163);
+            this.cmb_JType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_JType.Name = "cmb_JType";
-            this.cmb_JType.Size = new System.Drawing.Size(231, 24);
+            this.cmb_JType.Size = new System.Drawing.Size(174, 21);
             this.cmb_JType.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(270, 123);
+            this.label1.Location = new System.Drawing.Point(202, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 29);
+            this.label1.Size = new System.Drawing.Size(102, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Job Title :";
             // 
@@ -74,9 +78,10 @@ namespace SWE_Form1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(270, 196);
+            this.label2.Location = new System.Drawing.Point(202, 159);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 29);
+            this.label2.Size = new System.Drawing.Size(109, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Job Type :";
             // 
@@ -87,10 +92,10 @@ namespace SWE_Form1
             this.btn_search.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_search.Location = new System.Drawing.Point(404, 254);
-            this.btn_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_search.Location = new System.Drawing.Point(303, 206);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(157, 42);
+            this.btn_search.Size = new System.Drawing.Size(118, 34);
             this.btn_search.TabIndex = 6;
             this.btn_search.Text = "Search";
             this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,10 +110,10 @@ namespace SWE_Form1
             this.btn_applay.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_applay.Image = ((System.Drawing.Image)(resources.GetObject("btn_applay.Image")));
             this.btn_applay.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_applay.Location = new System.Drawing.Point(414, 461);
-            this.btn_applay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_applay.Location = new System.Drawing.Point(310, 375);
+            this.btn_applay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_applay.Name = "btn_applay";
-            this.btn_applay.Size = new System.Drawing.Size(138, 59);
+            this.btn_applay.Size = new System.Drawing.Size(104, 48);
             this.btn_applay.TabIndex = 8;
             this.btn_applay.Text = "Apply";
             this.btn_applay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -117,20 +122,20 @@ namespace SWE_Form1
             // 
             // txt_SSN
             // 
-            this.txt_SSN.Location = new System.Drawing.Point(465, 401);
-            this.txt_SSN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_SSN.Location = new System.Drawing.Point(349, 326);
+            this.txt_SSN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_SSN.Multiline = true;
             this.txt_SSN.Name = "txt_SSN";
-            this.txt_SSN.Size = new System.Drawing.Size(230, 33);
+            this.txt_SSN.Size = new System.Drawing.Size(174, 28);
             this.txt_SSN.TabIndex = 9;
             // 
             // cmb_compName
             // 
             this.cmb_compName.FormattingEnabled = true;
-            this.cmb_compName.Location = new System.Drawing.Point(464, 325);
-            this.cmb_compName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_compName.Location = new System.Drawing.Point(348, 264);
+            this.cmb_compName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_compName.Name = "cmb_compName";
-            this.cmb_compName.Size = new System.Drawing.Size(231, 24);
+            this.cmb_compName.Size = new System.Drawing.Size(174, 21);
             this.cmb_compName.TabIndex = 10;
             // 
             // btn_back
@@ -140,10 +145,10 @@ namespace SWE_Form1
             this.btn_back.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_back.Image = ((System.Drawing.Image)(resources.GetObject("btn_back.Image")));
             this.btn_back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_back.Location = new System.Drawing.Point(11, 10);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_back.Location = new System.Drawing.Point(8, 8);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(124, 54);
+            this.btn_back.Size = new System.Drawing.Size(93, 44);
             this.btn_back.TabIndex = 21;
             this.btn_back.Text = "Back";
             this.btn_back.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,9 +159,10 @@ namespace SWE_Form1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(395, 30);
+            this.label3.Location = new System.Drawing.Point(296, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(239, 52);
+            this.label3.Size = new System.Drawing.Size(192, 42);
             this.label3.TabIndex = 22;
             this.label3.Text = "Job Application";
             // 
@@ -164,9 +170,10 @@ namespace SWE_Form1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(270, 318);
+            this.label4.Location = new System.Drawing.Point(202, 258);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 29);
+            this.label4.Size = new System.Drawing.Size(127, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Companies :";
             // 
@@ -174,20 +181,38 @@ namespace SWE_Form1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(270, 405);
+            this.label5.Location = new System.Drawing.Point(202, 329);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 29);
+            this.label5.Size = new System.Drawing.Size(135, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Seeker SSN :";
             // 
+            // btn_modify
+            // 
+            this.btn_modify.FlatAppearance.BorderSize = 0;
+            this.btn_modify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modify.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
+            this.btn_modify.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_modify.Location = new System.Drawing.Point(11, 419);
+            this.btn_modify.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.btn_modify.Name = "btn_modify";
+            this.btn_modify.Size = new System.Drawing.Size(118, 32);
+            this.btn_modify.TabIndex = 27;
+            this.btn_modify.Text = "Report 2";
+            this.btn_modify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_modify.UseVisualStyleBackColor = true;
+            this.btn_modify.Click += new System.EventHandler(this.btn_modify_Click);
+            // 
             // FindVacancies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(144)))), ((int)(((byte)(250)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 589);
+            this.ClientSize = new System.Drawing.Size(746, 485);
+            this.Controls.Add(this.btn_modify);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.cmb_compName);
@@ -201,8 +226,9 @@ namespace SWE_Form1
             this.Controls.Add(this.cmb_JType);
             this.Controls.Add(this.cmb_Jtitle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1010, 636);
-            this.MinimumSize = new System.Drawing.Size(1010, 636);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(762, 524);
+            this.MinimumSize = new System.Drawing.Size(762, 524);
             this.Name = "FindVacancies";
             this.Text = "Find Vacancies";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FindVacancies_FormClosing);
@@ -226,5 +252,6 @@ namespace SWE_Form1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_modify;
     }
 }
