@@ -11,34 +11,35 @@ using CrystalDecisions.Shared;
 
 namespace SWE_Form1
 {
-    public partial class Report1 : Form
+    
+    public partial class Report2 : Form
     {
-        CrystalReport1 CR1;
-        public Report1()
+        CrystalReport4 CR2;
+        public Report2()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Report2_Load(object sender, EventArgs e)
         {
-            CR1 = new CrystalReport1();
-            foreach (ParameterDiscreteValue V in CR1.ParameterFields[0].DefaultValues)
-                cmb_report1.Items.Add(V.Value);
+            CR2 = new CrystalReport4();
+            foreach (ParameterDiscreteValue V2 in CR2.ParameterFields[0].DefaultValues)
+                cmb_report2.Items.Add(V2.Value);
         }
 
-        private void btn_generate_Click(object sender, EventArgs e)
+        private void btn_report2_Click(object sender, EventArgs e)
         {
-            CR1.SetParameterValue(0, cmb_report1.Text);
-            crystalReportViewer1.ReportSource = CR1;
+            CR2.SetParameterValue(0, cmb_report2.Text);
+            crystalReportViewer1.ReportSource = CR2;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddVacancies form = new AddVacancies();
+            FindVacancies form = new FindVacancies();
             form.ShowDialog();
-            this.Close();
 
+            this.Close();
         }
     }
 }

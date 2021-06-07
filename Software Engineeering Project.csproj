@@ -147,17 +147,23 @@
       <DependentUpon>CrystalReport2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="addVacancyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addVacancyReport.Designer.cs">
+      <DependentUpon>addVacancyReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindVacancyReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FindVacancyReport.Designer.cs">
       <DependentUpon>FindVacancyReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManageVacancyReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManageVacancyReport.Designer.cs">
-      <DependentUpon>ManageVacancyReport.cs</DependentUpon>
     </Compile>
     <Compile Include="manageVacancies.cs">
       <SubType>Form</SubType>
@@ -212,11 +218,15 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVacancyReport.resx">
+      <DependentUpon>addVacancyReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindVacancyReport.resx">
       <DependentUpon>FindVacancyReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManageVacancyReport.resx">
-      <DependentUpon>ManageVacancyReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manageVacancies.resx">
       <DependentUpon>manageVacancies.cs</DependentUpon>
