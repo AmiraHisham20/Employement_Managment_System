@@ -314,6 +314,7 @@ namespace SWE_Form1
             this.MaximumSize = new System.Drawing.Size(1010, 636);
             this.MinimumSize = new System.Drawing.Size(1010, 636);
             this.Name = "reg_seeker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seeker\'s Data";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reg_seeker_FormClosing);
             this.Load += new System.EventHandler(this.reg_seeker_Load);

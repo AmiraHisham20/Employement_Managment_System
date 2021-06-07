@@ -40,7 +40,7 @@ namespace SWE_Form1
             // 
             // txt_compId
             // 
-            this.txt_compId.Location = new System.Drawing.Point(503, 85);
+            this.txt_compId.Location = new System.Drawing.Point(510, 83);
             this.txt_compId.Multiline = true;
             this.txt_compId.Name = "txt_compId";
             this.txt_compId.Size = new System.Drawing.Size(181, 33);
@@ -49,7 +49,7 @@ namespace SWE_Form1
             // dgv_showApplicant
             // 
             this.dgv_showApplicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_showApplicant.Location = new System.Drawing.Point(148, 250);
+            this.dgv_showApplicant.Location = new System.Drawing.Point(148, 248);
             this.dgv_showApplicant.Name = "dgv_showApplicant";
             this.dgv_showApplicant.RowHeadersWidth = 51;
             this.dgv_showApplicant.RowTemplate.Height = 24;
@@ -63,7 +63,7 @@ namespace SWE_Form1
             this.btn_search.Font = new System.Drawing.Font("Gadugi", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_search.Location = new System.Drawing.Point(403, 170);
+            this.btn_search.Location = new System.Drawing.Point(410, 168);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(152, 39);
             this.btn_search.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace SWE_Form1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(273, 82);
+            this.label1.Location = new System.Drawing.Point(280, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 36);
             this.label1.TabIndex = 3;
@@ -116,6 +116,7 @@ namespace SWE_Form1
             this.MaximumSize = new System.Drawing.Size(1010, 636);
             this.MinimumSize = new System.Drawing.Size(1010, 636);
             this.Name = "showApplicant";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "showApplicant";
             this.Load += new System.EventHandler(this.showApplicant_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_showApplicant)).EndInit();
