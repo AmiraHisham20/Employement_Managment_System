@@ -105,5 +105,14 @@ namespace SWE_Form1
         {
             MessageBox.Show(" A software system that allows\n companies to register in it, set job\n vacancies in every available position and\n set the number of employees that they want\n in a particular position, also allow employees\n to register and search for jobs with the same job\n title that they want to apply in it,\n If he applied in any company this company will be\n able to see this applicant information.");
         }
+
+        private void btn_modify_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeReport form = new HomeReport();
+            form.ShowDialog();
+            this.Close();
+           
+        }
     }
 }
